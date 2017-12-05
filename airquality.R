@@ -1,6 +1,7 @@
 # This R environment comes with all of CRAN preinstalled, as well as many other helpful packages
 # The environment is defined by the kaggle/rstats docker image: https://github.com/kaggle/docker-rstats
 # For example, here's several helpful packages to load in 
+```r
 
 library(ggplot2) # Data visualization
 library(readr) # CSV file I/O, e.g. the read_csv function
@@ -40,3 +41,4 @@ polarAnnulus(airqual, pollutant = "NOx", type = "month", local.tz = "Asia/Taipeh
 corPlot(airqual, cluster = TRUE,dendrogram = TRUE)
 # timePlot
 timePlot(selectByDate(airqual, month = "jan"), pollutant = c("NOx", "O3", "PM2.5", "PM10"))
+```
